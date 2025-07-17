@@ -19,9 +19,9 @@ export default function Home() {
           <Services />
           <Process />
           <Projects />
-          <Award />
-          <Testimonials />
-          <Blog />
+          {/* <Award /> */}
+          {/* <Testimonials /> */}
+          {/* <Blog /> */}
           <Contact />
         </main>
         <Footer />

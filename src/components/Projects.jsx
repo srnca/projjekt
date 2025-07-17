@@ -44,13 +44,13 @@ function Projects() {
         <div className="row align-items-center">
           <div className="col-lg-8">
             <h2 className="fsz-45 fw-500">
-              Latest
+              Naše
               <span className="sub-font fst-italic color-orange1 fw-400">
-                projects
+              &nbsp;projekty
               </span>
             </h2>
           </div>
-          <div className="col-lg-4 text-lg-end mt-4 mt-lg-0">
+          {/* <div className="col-lg-4 text-lg-end mt-4 mt-lg-0">
             <a
               href="#"
               className="butn borderd border rounded-pill hover-bg-black"
@@ -60,7 +60,7 @@ function Projects() {
                 <i className="ms-2 fal fa-long-arrow-right ico-45"></i>
               </span>
             </a>
-          </div>
+          </div> */}
         </div>
         <div className="tabs-links mt-40">
           <ul className="nav nav-pills" id="pills-tab" role="tablist">
@@ -72,7 +72,7 @@ function Projects() {
                 data-bs-target="#pills-proj1"
                 type="button"
               >
-                Interior Design
+                Projektová činnosť
               </button>
             </li>
             <li className="nav-item" role="presentation">
@@ -83,7 +83,7 @@ function Projects() {
                 data-bs-target="#pills-proj2"
                 type="button"
               >
-                Landscape
+                3D vizualizácie
               </button>
             </li>
             <li className="nav-item" role="presentation">
@@ -94,7 +94,7 @@ function Projects() {
                 data-bs-target="#pills-proj1"
                 type="button"
               >
-                Rennovation
+                Návrh interiéru
               </button>
             </li>
             <li className="nav-item" role="presentation">
@@ -105,7 +105,7 @@ function Projects() {
                 data-bs-target="#pills-proj2"
                 type="button"
               >
-                Furniture
+                Realizácie stavieb
               </button>
             </li>
           </ul>

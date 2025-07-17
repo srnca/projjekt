@@ -4,7 +4,7 @@ import data from '@/data/slider';
 import { Autoplay, Navigation, Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-function Header() {
+const Header = () => {
   const swiperOptions = {
     modules: [Autoplay, Pagination, Navigation],
     slidesPerView: 1,
@@ -34,7 +34,7 @@ function Header() {
             <div className="row justify-content-between">
               <div className="col-lg-8">
                 <h1>
-                  všetko pre vás
+                  Všetko pre Váš
                   <span className="sub-font"> stavebný sen </span>
                 </h1>
                 {/* <div className="award-wrapper">

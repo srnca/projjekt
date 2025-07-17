@@ -7,9 +7,9 @@ function Services() {
         <div className="row gx-0">
           <div className="col-lg-7">
             <h2 className="fsz-45 fw-500 mb-50">
-              Archin’s
+              O
               <span className="sub-font fst-italic color-orange1 fw-400">
-                services
+              &nbsp;nás
               </span>
             </h2>
             <div className="services">
