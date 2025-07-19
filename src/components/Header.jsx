@@ -88,7 +88,7 @@ const Header = () => {
             <Swiper {...swiperOptions}>
               {data.map((item, i) => (
                 <div key={i}>
-                  <SwiperSlide className="slider-card">
+                  <SwiperSlide key={i} className="slider-card">
                     <div className="img">
                       <img
                         src={item.img}

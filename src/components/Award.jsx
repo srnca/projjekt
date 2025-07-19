@@ -5,9 +5,9 @@ function Award() {
     <section className="tc-awards-style2">
       <div className="container">
         <h2 className="fsz-45 fw-500 text-center mb-30">
-          Featured
+          Naši
           <span className="sub-font fst-italic color-orange1 fw-400">
-            awards
+          &nbsp;partneri
           </span>
         </h2>
         <div className="awards">

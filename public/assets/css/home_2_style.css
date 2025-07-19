@@ -897,8 +897,8 @@
   padding-bottom: 120px;
 }
 .tc-projects-style2 .projects-slider-content .projects-slider .controls {
-  position: absolute;
-  bottom: 0;
+  position: relative;
+  top: 50px;
   width: 100%;
 }
 .tc-projects-style2 .projects-slider-content .projects-slider .controls .swiper-pagination {

@@ -1,10 +1,18 @@
 'use client';
-import React from 'react';
+import React, { useState } from 'react';
 import data from '@/data/projects';
 import { Autoplay, Navigation, Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { NavPill } from './projects/nav-pill';
+import { Card } from './projects/card';
+import "react-image-gallery/styles/css/image-gallery.css";
+
+
 
 function Projects() {
+
+  const [filter, setFilter] = useState('');
+
   const swiperOptions = {
     modules: [Pagination, Navigation, Autoplay],
     slidesPerView: 3,
@@ -12,7 +20,7 @@ function Projects() {
     centeredSlides: true,
     speed: 1000,
     pagination: {
-      el: '.tc-projects-style2 .swiper-pagination',
+      el: '#swiper-pagination',
       clickable: true,
     },
     navigation: false,
@@ -50,158 +58,30 @@ function Projects() {
               </span>
             </h2>
           </div>
-          {/* <div className="col-lg-4 text-lg-end mt-4 mt-lg-0">
-            <a
-              href="#"
-              className="butn borderd border rounded-pill hover-bg-black"
-            >
-              <span>
-                See All Projects
-                <i className="ms-2 fal fa-long-arrow-right ico-45"></i>
-              </span>
-            </a>
-          </div> */}
         </div>
         <div className="tabs-links mt-40">
           <ul className="nav nav-pills" id="pills-tab" role="tablist">
-            <li className="nav-item" role="presentation">
-              <button
-                className="nav-link active"
-                id="pills-proj1-tab"
-                data-bs-toggle="pill"
-                data-bs-target="#pills-proj1"
-                type="button"
-              >
-                Projektová činnosť
-              </button>
-            </li>
-            <li className="nav-item" role="presentation">
-              <button
-                className="nav-link"
-                id="pills-proj2-tab"
-                data-bs-toggle="pill"
-                data-bs-target="#pills-proj2"
-                type="button"
-              >
-                3D vizualizácie
-              </button>
-            </li>
-            <li className="nav-item" role="presentation">
-              <button
-                className="nav-link"
-                id="pills-proj3-tab"
-                data-bs-toggle="pill"
-                data-bs-target="#pills-proj1"
-                type="button"
-              >
-                Návrh interiéru
-              </button>
-            </li>
-            <li className="nav-item" role="presentation">
-              <button
-                className="nav-link"
-                id="pills-proj4-tab"
-                data-bs-toggle="pill"
-                data-bs-target="#pills-proj2"
-                type="button"
-              >
-                Realizácie stavieb
-              </button>
-            </li>
+            <NavPill heading='Všetko' filter='' setFilter={setFilter} active />
+            <NavPill heading='3D vizualizácie' filter='house' setFilter={setFilter} />
+            <NavPill heading='Návrh exteriéru' filter='exterior' setFilter={setFilter} />
           </ul>
         </div>
       </div>
       <div className="tab-content" id="pills-tabContent">
-        <div
-          className="tab-pane fade show active"
-          id="pills-proj1"
-          role="tabpanel"
-          aria-labelledby="pills-proj1-tab"
-        >
-          <div className="projects-slider-content mt-100">
-            <div className="projects-slider">
-              <Swiper {...swiperOptions}>
-                {data.map((item, i) => (
-                  <SwiperSlide key={i}>
-                    <div className="project-card">
-                      <a href="#" className="img">
-                        <img src={item.img} alt="" className="img-cover" />
-                        <div className="year">
-                          <span className="txt"> 2023 </span>
-                          <img
-                            src="/assets/img/project_shape.png"
-                            alt=""
-                            className="bg"
-                          />
-                        </div>
-                        <div className="arrow">
-                          <i className="fal fa-long-arrow-right ico-45"></i>
-                        </div>
-                      </a>
-                      <div className="info">
-                        <div className="tags">
-                          <a href="#"> {item.sub1} </a>
-                          <a href="#"> {item.sub2} </a>
-                        </div>
-                        <h3 className="title">
-                          <a href="#"> {item.title} </a>
-                        </h3>
-                      </div>
-                    </div>
+        <div className="projects-slider-content mt-50">
+          <div className="projects-slider">
+            <Swiper {...swiperOptions}>
+              {data
+                .filter((item) => filter === '' || item.type === filter)
+                .map((item, index) => (
+                  <SwiperSlide key={index}>
+                    <Card item={item} />
                   </SwiperSlide>
-                ))}
-              </Swiper>
-              <div className="controls">
-                <div className="container">
-                  <div className="swiper-pagination"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          className="tab-pane fade"
-          id="pills-proj2"
-          role="tabpanel"
-          aria-labelledby="pills-proj2-tab"
-        >
-          <div className="projects-slider-content mt-100">
-            <div className="projects-slider">
-              <Swiper {...swiperOptions}>
-                {data.map((item, i) => (
-                  <SwiperSlide key={i}>
-                    <div className="project-card">
-                      <a href="#" className="img">
-                        <img src={item.img} alt="" className="img-cover" />
-                        <div className="year">
-                          <span className="txt"> 2023 </span>
-                          <img
-                            src="/assets/img/project_shape.png"
-                            alt=""
-                            className="bg"
-                          />
-                        </div>
-                        <div className="arrow">
-                          <i className="fal fa-long-arrow-right ico-45"></i>
-                        </div>
-                      </a>
-                      <div className="info">
-                        <div className="tags">
-                          <a href="#"> {item.sub1} </a>
-                          <a href="#"> {item.sub2} </a>
-                        </div>
-                        <h3 className="title">
-                          <a href="#"> {item.title} </a>
-                        </h3>
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                ))}
-              </Swiper>
-              <div className="controls">
-                <div className="container">
-                  <div className="swiper-pagination"></div>
-                </div>
+              ))}
+            </Swiper>
+            <div className="controls">            
+            <div className="container">
+                <div id="swiper-pagination" className="swiper-pagination"></div>
               </div>
             </div>
           </div>

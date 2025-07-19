@@ -32,21 +32,13 @@ function Navbar() {
           </div>
           <div className="nav-icons">
             <a href="#" className="icon">
-              <i className="fal fa-globe"></i>
+              <i className="fab fa-facebook"></i>
             </a>
-            <a href="#" className="icon search_btn">
-              <i className="fal fa-search"></i>
+            <a href="#" className="icon">
+              <i className="fab fa-instagram"></i>
             </a>
-            <div className="nav-search-box">
-              <div className="form-group">
-                <input type="text" placeholder="search word" />
-                <button>
-                  <i className="fal fa-search"></i>
-                </button>
-              </div>
-            </div>
-            <a href="#" className="icon side_menu_btn">
-              <i className="fal fa-grip-lines"></i>
+            <a href="mailto:projjekt@gmail.com" className="icon">
+              <i className="fal fa-envelope"></i>
             </a>
           </div>
         </div>

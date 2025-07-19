@@ -1,26 +1,60 @@
 [
   {
-    "title": "ABERY Apartment Master Bedroom",
-    "sub1": "Interior Design",
-    "sub2": "Furniture",
-    "img": "/assets/img/projects/proj1.jpg"
+    "title": "Radová zástavba",
+    "type": "house",
+    "cover": "/assets/img/projects/radovka/01.png",
+    "year": "2024",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "gallery" : [
+        { "original": "/assets/img/projects/radovka/01.png" },
+        { "original": "/assets/img/projects/radovka/02.png" },
+        { "original": "/assets/img/projects/radovka/03.png" }
+    ]
   },
   {
-    "title": "Neoclassical Sofa",
-    "sub1": "Furniture",
-    "sub2": "Furniture",
-    "img": "/assets/img/projects/proj2.jpg"
+    "title": "Rodinný dom 01",
+    "type": "house",
+    "cover": "/assets/img/projects/rodinny_dom_1/01.png",
+    "year": "2024",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "gallery" : [
+        { "original": "/assets/img/projects/rodinny_dom_1/01.png" },
+        { "original": "/assets/img/projects/rodinny_dom_1/02.png" }
+    ]
   },
   {
-    "title": "Salone Skin & Spa",
-    "sub1": "Interior Design",
-    "sub2": "Furniture",
-    "img": "/assets/img/projects/proj3.jpg"
+    "title": "Rodinný dom 02",
+    "type": "house",
+    "cover": "/assets/img/projects/rodinny_dom_2/01.png",
+    "year": "2024",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "gallery" : [
+        { "original": "/assets/img/projects/rodinny_dom_2/01.png" },
+        { "original": "/assets/img/projects/rodinny_dom_2/02.png" }
+    ]
   },
   {
-    "title": "Boston D53 Deluxe Apartment",
-    "sub1": "Furniture",
-    "sub2": "Interior Design",
-    "img": "/assets/img/projects/proj4.jpg"
+    "title": "Vila Veľký Šariš",
+    "type": "house",
+    "cover": "/assets/img/projects/vila_saris/01.png",
+    "year": "2024",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "gallery" : [
+        { "original": "/assets/img/projects/vila_saris/01.png" },
+        { "original": "/assets/img/projects/vila_saris/02.png" },
+        { "original": "/assets/img/projects/vila_saris/03.png" }
+    ]
+  },
+  {
+    "title": "Parkovisko",
+    "type": "exterior",
+    "cover": "/assets/img/projects/parking/01.png",
+    "year": "2024",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "gallery" : [
+        { "original": "/assets/img/projects/parking/01.png" },
+        { "original": "/assets/img/projects/parking/02.png" },
+        { "original": "/assets/img/projects/parking/03.png" }
+    ]
   }
 ]
