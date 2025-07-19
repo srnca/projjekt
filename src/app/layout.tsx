@@ -6,8 +6,8 @@ import Loader from '@/components/Loader';
 export const metadata: Metadata = {
   title: 'projjekt',
   icons: {
-    icon: '/assets/img/fav.png',
-    shortcut: '/assets/img/fav.png',
+    icon: '/assets/img/fav.ico',
+    shortcut: '/assets/img/fav.ico',
     other: generateStylesheetObject([
       '/assets/css/lib/bootstrap.min.css',
       '/assets/css/lib/all.min.css',
